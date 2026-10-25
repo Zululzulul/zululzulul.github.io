@@ -1,171 +1,9 @@
-/* Portfolio content.
- * Edit designFocus, contact details, CV URL and project text here.
- * projectOrder sets independent ordering for All and each category.
- * Use existing project ids in those lists; ids also form shared case-study links.
- * Media paths are relative to index.html and work under a GitHub Pages project URL.
- */
 window.PORTFOLIO = {
   "name": "Jakub Krzysiak",
   "email": "jake.krzysiak@gmail.com",
   "linkedin": "https://www.linkedin.com/in/jakub--krzysiak/",
   "cvUrl": "assets/Jakub-Krzysiak-CV.pdf",
   "projects": [
-    {
-      "id": "greg-the-frog",
-      "categories": [
-        "team",
-        "school"
-      ],
-      "categoryLabel": "Team project · Futuregames GP1",
-      "title": "Greg the Frog: Burning Escape",
-      "demo": false,
-      "featured": true,
-      "summary": "Designed and built both levels, from paper sketches to set dressing, and refined the frog’s movement feel.",
-      "tags": [
-        "Level design",
-        "Movement feel"
-      ],
-      "role": "Level Designer",
-      "team": "16 people",
-      "duration": "3 weeks",
-      "engine": "Unity",
-      "cover": "assets/greg-the-frog-cover.png",
-      "coverFit": "contain",
-      "coverWidth": 1260,
-      "coverHeight": 1000,
-      "coverAlt": "Greg the Frog: Burning Escape cover artwork: a frog swinging above a burning forest, carrying smaller frogs.",
-      "plateTitle": "Two levels · Unity",
-      "showCoverCaption": false,
-      "overview": "Greg the Frog is a platformer about rescuing frogs from a burning rainforest. Fire, damaged forest and machinery become more visible as players progress. Faster completion earns better time medals, creating a choice between spending time on rescues and pursuing a faster run.",
-      "experience": "Feel the speed and excitement of being a frog, while facing the choice between escaping faster and rescuing others from a burning rainforest.",
-      "contributions": [
-        "Designed, blocked out and dressed both levels, testing routes, jumps and distances.",
-        "Playtested the levels and revised their layout in response to feedback.",
-        "Polished movement feel and prototyped a jump adjustment for better control at speed."
-      ],
-      "processTitle": "Building both levels",
-      "processSteps": [
-        [
-          "Movement first",
-          "I refined hopping and tongue movement, then used the character’s capabilities to shape the levels."
-        ],
-        [
-          "Sketch and block out",
-          "I sketched routes on paper and built blockouts in Unity, checking jumps and distances."
-        ],
-        [
-          "Guide and dress",
-          "I used colour-coded edges, particles and terrain to guide players along the main and alternative routes, then added set dressing."
-        ]
-      ],
-      "levelComparison": [
-        {
-          "label": "Level 01",
-          "title": "Tutorial with some openness",
-          "text": "A tutorial leading into more open areas."
-        },
-        {
-          "label": "Level 02",
-          "title": "A linear route",
-          "text": "A more directed route with fewer navigation choices."
-        }
-      ],
-      "playtesting": "I tested with fellow students, teammates, my mentor and friends.",
-      "before": "After the tutorial, the first level gave players more freedom, but finding the intended route was a problem.",
-      "after": "I simplified and adjusted the layout while keeping some openness.",
-      "outcomeLabel": "What I would change now",
-      "outcome": "I would make the first level more linear, with fewer optional routes. The project schedule did not leave time for a full redesign.",
-      "movementStudy": {
-        "title": "Keeping control at high speed",
-        "problem": "The frog hops instead of walking. At high speed, that rhythm made it difficult to time a jump near a platform edge.",
-        "decision": "I prototyped a Space input that pushes the frog down, preserves forward momentum and triggers a jump on landing.",
-        "intent": "Let the player control the take-off moment without losing speed.",
-        "reflection": "The change improved the feel of jumping and made the game easier to play.",
-        "comparisonNote": "Both examples use the updated movement. The missed jump illustrates a similar outcome to the original timing problem.",
-        "clips": [
-          {
-            "title": "Without a timely jump",
-            "url": "assets/greg-no-timely-jump.mp4",
-            "poster": "assets/greg-no-timely-jump.jpg",
-            "description": "Earlier, a jump could be missed even with correctly timed input. This clip illustrates a similar missed-jump outcome in the current system.",
-            "loop": true,
-            "type": "file"
-          },
-          {
-            "title": "With a timed jump",
-            "url": "assets/greg-timed-jump.mp4",
-            "poster": "assets/greg-timed-jump.jpg",
-            "description": "After the adjustment, input initiates the downward-and-jump response. This clip shows a successful timed jump.",
-            "loop": true,
-            "type": "file"
-          }
-        ]
-      },
-      "lesson": "More is not always better. Extra openness made the route harder to follow without adding enough to the experience. The linear level worked better for navigation and onboarding.",
-      "teamLesson": "Changing someone else’s code directly taught me to agree on changes, respect each role’s responsibilities and communicate through prototypes. For the jump adjustment, I built the prototype and the programmer refined the implementation.",
-      "mediaTitle": "Project video",
-      "video": {
-        "type": "youtube",
-        "id": "Oufd0Ngkfu0"
-      },
-      "documents": [],
-      "links": [
-        {
-          "title": "Play on itch.io",
-          "url": "https://futuregames.itch.io/greg-the-frog"
-        },
-        {
-          "title": "Watch on YouTube",
-          "url": "https://www.youtube.com/watch?v=Oufd0Ngkfu0"
-        }
-      ],
-      "processGallery": [
-        {
-          "src": "assets/greg-level-blockout.png",
-          "title": "Blockout",
-          "alt": "Editor view of the Greg the Frog level, with simple platforms, walls and tongue attachment markers defining the route.",
-          "caption": "Testing the route, platform spacing and movement in blockout.",
-          "width": 1422,
-          "height": 714
-        },
-        {
-          "src": "assets/greg-level-environment.png",
-          "title": "Environment pass",
-          "alt": "Editor view of the level with rock formations, vegetation and waterfalls replacing the simple blockout shapes.",
-          "caption": "The level with environment assets placed around the playable route.",
-          "width": 1313,
-          "height": 695
-        }
-      ],
-      "testingStudy": [
-        {
-          "label": "Design problem",
-          "text": "After the tutorial, the first level’s open layout made the intended route hard to read. Players struggled to finish within the expected time."
-        },
-        {
-          "label": "Design decision",
-          "text": "I simplified and rearranged the layout while keeping some openness."
-        },
-        {
-          "label": "Why this decision",
-          "text": "Reduce navigation friction so players could focus on movement, rescues and their time."
-        },
-        {
-          "label": "Observation",
-          "text": "The more linear second level did not show the same navigation problem."
-        }
-      ],
-      "reflectionTitle": "What I learned",
-      "videoLink": {
-        "title": "Watch on YouTube",
-        "url": "https://www.youtube.com/watch?v=Oufd0Ngkfu0"
-      },
-      "cardPreview": {
-        "type": "file",
-        "url": "assets/greg-timed-jump.mp4",
-        "title": "Greg the Frog gameplay preview"
-      }
-    },
     {
       "id": "frost-haul",
       "categories": [
@@ -174,8 +12,6 @@ window.PORTFOLIO = {
       ],
       "categoryLabel": "Team project · Futuregames GP3",
       "title": "Frost Haul",
-      "demo": false,
-      "featured": true,
       "summary": "Built the moving world, navigation display and dynamic visual feedback. Prototyped the macro game loop in Godot.",
       "tags": [
         "Technical design",
@@ -190,8 +26,6 @@ window.PORTFOLIO = {
       "coverHeight": 500,
       "coverFit": "contain",
       "coverAlt": "Frost Haul cover art: a steam locomotive crossing a snowy landscape beneath a dark plume of smoke, with the game title below.",
-      "plateTitle": "World systems & navigation",
-      "showCoverCaption": false,
       "experience": "Survive a snow apocalypse as one of the few people left, keeping the train running with another player.",
       "experienceDetail": "Feel the constant pressure of repairing the train and coordinating with your partner while carrying supplies to people in shelters.",
       "contributions": [
@@ -214,7 +48,6 @@ window.PORTFOLIO = {
           "id": "prototype",
           "title": "Prototyping the macro game loop",
           "navTitle": "Godot prototype",
-          "note": "Godot",
           "paragraphs": [
             "I built a turn-based Godot prototype in one day to test route planning and resource management: cargo trading, cargo-dependent fuel use, damage and repairs.",
             "Each junction offered two choices: left or right. I used the prototype to test the map layout and whether the macro game loop held together."
@@ -397,8 +230,6 @@ window.PORTFOLIO = {
       ],
       "categoryLabel": "Solo project · School assignment",
       "title": "Stay Quiet",
-      "demo": false,
-      "featured": true,
       "summary": "Designed and built a 2D sound-driven horror game where each sound you make is a threat.",
       "tags": [
         "Systems design",
@@ -415,8 +246,6 @@ window.PORTFOLIO = {
       "coverAlt": "Stay Quiet game title in red and black pixel art.",
       "coverLogo": "assets/stayquiet-ducktopus.png",
       "coverLogoAlt": "Ducktopus logo.",
-      "plateTitle": "Sound, tension & escape",
-      "showCoverCaption": false,
       "experience": "A challenging, immersive experience where one wrong move can be fatal, but careful planning and resourcefulness are rewarded.",
       "contributions": [
         "Designed and implemented the game’s systems, enemy behaviour and interactions.",
@@ -632,8 +461,6 @@ window.PORTFOLIO = {
         "jam"
       ],
       "categoryLabel": "Team project · Hello GameJam",
-      "featured": true,
-      "demo": false,
       "tags": [
         "Technical design",
         "Minigame design"
@@ -642,8 +469,6 @@ window.PORTFOLIO = {
       "coverWidth": 960,
       "coverHeight": 300,
       "coverWide": true,
-      "showCoverCaption": false,
-      "plateTitle": "Computer minigames · Blueprints",
       "award": {
         "result": "3rd place",
         "event": "Hello GameJam",
@@ -810,6 +635,198 @@ window.PORTFOLIO = {
       ]
     },
     {
+      "id": "greg-the-frog",
+      "categories": [
+        "team",
+        "school"
+      ],
+      "categoryLabel": "Team project · Futuregames GP1",
+      "title": "Greg the Frog: Burning Escape",
+      "summary": "Designed and built both levels, from paper sketches to set dressing, and refined the frog’s movement feel.",
+      "tags": [
+        "Level design",
+        "Movement feel"
+      ],
+      "role": "Level Designer",
+      "team": "16 people",
+      "duration": "3 weeks",
+      "engine": "Unity",
+      "cover": "assets/greg-the-frog-cover.png",
+      "coverFit": "contain",
+      "coverWidth": 1260,
+      "coverHeight": 1000,
+      "coverAlt": "Greg the Frog: Burning Escape cover artwork: a frog swinging above a burning forest, carrying smaller frogs.",
+      "experience": "Feel the speed and excitement of being a frog, while facing the choice between escaping faster and rescuing others from a burning rainforest.",
+      "contributions": [
+        "Designed, blocked out and dressed both levels, testing routes, jumps and distances.",
+        "Playtested the levels and revised their layout in response to feedback.",
+        "Polished movement feel and prototyped a jump adjustment for better control at speed."
+      ],
+      "caseSections": [
+        {
+          "id": "overview",
+          "title": "Project context",
+          "paragraphs": [
+            "Greg the Frog is a platformer about rescuing frogs from a burning rainforest. Fire, damaged forest and machinery become more visible as players progress. Faster completion earns better time medals, creating a choice between spending time on rescues and pursuing a faster run."
+          ]
+        },
+        {
+          "id": "levels",
+          "title": "Building both levels",
+          "navTitle": "Level design",
+          "flow": [
+            {
+              "title": "Movement first",
+              "text": "I refined hopping and tongue movement, then used the character’s capabilities to shape the levels."
+            },
+            {
+              "title": "Sketch and block out",
+              "text": "I sketched routes on paper and built blockouts in Unity, checking jumps and distances."
+            },
+            {
+              "title": "Guide and dress",
+              "text": "I used colour-coded edges, particles and terrain to guide players along the main and alternative routes, then added set dressing."
+            }
+          ],
+          "credits": [
+            {
+              "label": "Level 1: Tutorial with some openness",
+              "text": "A tutorial leading into more open areas."
+            },
+            {
+              "label": "Level 2: A linear route",
+              "text": "A more directed route with fewer navigation choices."
+            }
+          ],
+          "gallery": [
+            {
+              "src": "assets/greg-level-blockout.png",
+              "title": "Blockout",
+              "alt": "Editor view of the Greg the Frog level, with simple platforms, walls and tongue attachment markers defining the route.",
+              "caption": "Testing the route, platform spacing and movement in blockout.",
+              "width": 1422,
+              "height": 714
+            },
+            {
+              "src": "assets/greg-level-environment.png",
+              "title": "Environment pass",
+              "alt": "Editor view of the level with rock formations, vegetation and waterfalls replacing the simple blockout shapes.",
+              "caption": "The level with environment assets placed around the playable route.",
+              "width": 1313,
+              "height": 695
+            }
+          ],
+          "galleryPaired": true
+        },
+        {
+          "id": "testing",
+          "title": "Playtesting & iteration",
+          "navTitle": "Playtesting",
+          "paragraphs": [
+            "I tested with fellow students, teammates, my mentor and friends."
+          ],
+          "statements": [
+            {
+              "label": "Design problem",
+              "text": "After the tutorial, the first level’s open layout made the intended route hard to read. Players struggled to finish within the expected time."
+            },
+            {
+              "label": "Design decision",
+              "text": "I simplified and rearranged the layout while keeping some openness."
+            },
+            {
+              "label": "Why this decision",
+              "text": "Reduce navigation friction so players could focus on movement, rescues and their time."
+            },
+            {
+              "label": "Observation",
+              "text": "The more linear second level did not show the same navigation problem."
+            }
+          ],
+          "callout": {
+            "label": "What I would change now",
+            "text": "I would make the first level more linear, with fewer optional routes. The project schedule did not leave time for a full redesign."
+          }
+        },
+        {
+          "id": "movement",
+          "title": "Keeping control at high speed",
+          "navTitle": "Movement feel",
+          "statements": [
+            {
+              "label": "Design problem",
+              "text": "The frog hops instead of walking. At high speed, that rhythm made it difficult to time a jump near a platform edge."
+            },
+            {
+              "label": "Design decision",
+              "text": "I prototyped a Space input that pushes the frog down, preserves forward momentum and triggers a jump on landing."
+            },
+            {
+              "label": "Why this decision",
+              "text": "Let the player control the take-off moment without losing speed."
+            },
+            {
+              "label": "My assessment",
+              "text": "The change improved the feel of jumping and made the game easier to play."
+            }
+          ],
+          "clipsNote": "Both examples use the updated movement. The missed jump illustrates a similar outcome to the original timing problem.",
+          "clips": [
+            {
+              "title": "Without a timely jump",
+              "url": "assets/greg-no-timely-jump.mp4",
+              "poster": "assets/greg-no-timely-jump.jpg",
+              "description": "Earlier, a jump could be missed even with correctly timed input. This clip illustrates a similar missed-jump outcome in the current system.",
+              "loop": true,
+              "type": "file"
+            },
+            {
+              "title": "With a timed jump",
+              "url": "assets/greg-timed-jump.mp4",
+              "poster": "assets/greg-timed-jump.jpg",
+              "description": "After the adjustment, input initiates the downward-and-jump response. This clip shows a successful timed jump.",
+              "loop": true,
+              "type": "file"
+            }
+          ],
+          "clipsComparison": true
+        },
+        {
+          "id": "reflection",
+          "title": "What I learned",
+          "paragraphs": [
+            "More is not always better. Extra openness made the route harder to follow without adding enough to the experience. The linear level worked better for navigation and onboarding.",
+            "Changing someone else’s code directly taught me to agree on changes, respect each role’s responsibilities and communicate through prototypes. For the jump adjustment, I built the prototype and the programmer refined the implementation."
+          ]
+        }
+      ],
+      "mediaTitle": "Project video",
+      "video": {
+        "type": "youtube",
+        "id": "Oufd0Ngkfu0"
+      },
+      "documents": [],
+      "links": [
+        {
+          "title": "Play on itch.io",
+          "url": "https://futuregames.itch.io/greg-the-frog"
+        },
+        {
+          "title": "Watch on YouTube",
+          "url": "https://www.youtube.com/watch?v=Oufd0Ngkfu0"
+        }
+      ],
+      "videoLink": {
+        "title": "Watch on YouTube",
+        "url": "https://www.youtube.com/watch?v=Oufd0Ngkfu0"
+      },
+      "cardPreview": {
+        "type": "file",
+        "url": "assets/greg-timed-jump.mp4",
+        "title": "Greg the Frog gameplay preview"
+      }
+    },
+    {
       "id": "interactive-western-sequence",
       "title": "Narrative Design Assignment",
       "categories": [
@@ -817,8 +834,6 @@ window.PORTFOLIO = {
         "school"
       ],
       "categoryLabel": "School assignment · Futuregames",
-      "featured": true,
-      "demo": false,
       "summary": "Created an interactive western sequence, combining cinematic and environmental storytelling.",
       "role": "Narrative Designer",
       "team": "Solo",
@@ -828,14 +843,12 @@ window.PORTFOLIO = {
         "Narrative design",
         "Cinematics"
       ],
-      "plateTitle": "Narrative sequence · Unreal Engine",
       "cover": "assets/interactive-western-cover.png",
       "coverAlt": "A lantern lights a grave marked by a wooden cross and cowboy hat, overlooking a western town at night.",
       "coverWidth": 2048,
       "coverHeight": 1020,
       "coverFit": "contain",
       "coverWide": true,
-      "showCoverCaption": false,
       "experience": "Feel the anticipation of a western showdown, then experience it firsthand.",
       "contributions": [
         "Designed the narrative sequence, dialogue and scene composition.",
@@ -903,16 +916,16 @@ window.PORTFOLIO = {
   "designFocus": "Combining engaging gameplay with immersive, narrative-driven experiences that make you think.",
   "projectOrder": {
     "all": [
-      "greg-the-frog",
       "frost-haul",
       "stay-quiet",
       "count-corpula",
+      "greg-the-frog",
       "interactive-western-sequence"
     ],
     "team": [
-      "greg-the-frog",
       "frost-haul",
-      "count-corpula"
+      "count-corpula",
+      "greg-the-frog"
     ],
     "personal": [
       "stay-quiet",
@@ -922,9 +935,9 @@ window.PORTFOLIO = {
       "count-corpula"
     ],
     "school": [
-      "greg-the-frog",
       "frost-haul",
       "stay-quiet",
+      "greg-the-frog",
       "interactive-western-sequence"
     ]
   }
