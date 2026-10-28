@@ -12,7 +12,7 @@ window.PORTFOLIO = {
       ],
       "categoryLabel": "Team project · Futuregames GP3",
       "title": "Frost Haul",
-      "summary": "Built the moving world, navigation display and dynamic visual feedback. Prototyped the macro game loop in Godot.",
+      "summary": "Built the moving world, navigation display and dynamic visual feedback. Made train and station layout. Prototyped the macro game loop in order to see if paper desing was valid.",
       "tags": [
         "Technical design",
         "Level design"
@@ -20,30 +20,22 @@ window.PORTFOLIO = {
       "role": "Technical / Level Designer",
       "team": "11 people",
       "duration": "7 weeks",
-      "engine": "Unreal Engine · Godot prototype",
+      "engine": "Unreal Engine · Godot (prototyping)",
       "cover": "assets/frosthaul-cover.png",
       "coverWidth": 630,
       "coverHeight": 500,
       "coverFit": "contain",
       "coverAlt": "Frost Haul cover art: a steam locomotive crossing a snowy landscape beneath a dark plume of smoke, with the game title below.",
-      "experience": "Survive a snow apocalypse as one of the few people left, keeping the train running with another player.",
-      "experienceDetail": "Feel the constant pressure of repairing the train and coordinating with your partner while carrying supplies to people in shelters.",
+      "experience": "Feel the constant pressure of managing resources, keeping the train repaired and surviving the cold.",
+      "experienceDetail": "Become train conductors in an apocalypse where the only way to transport supplies is by traveling the old railway.",
       "contributions": [
-        "Designed and implemented the moving environment and segment recycling.",
+        "Designed and implemented the moving segmented environment and optimized it.",
         "Built the navigation map’s visual layer and state updates.",
         "Prototyped route planning and resource management in Godot.",
         "Integrated art assets and helped teammates with replication.",
-        "Created in-world displays and dynamic materials for displays, frost effects and doors."
+        "Created in-world displays and dynamic materials for displays, frost effects, map lights, thermometer and other similar effects."
       ],
       "caseSections": [
-        {
-          "id": "overview",
-          "title": "Project context",
-          "navTitle": "Project context",
-          "paragraphs": [
-            "Frost Haul is a cooperative train game set during a snow apocalypse. Players deliver cargo to shelter survivors while managing fuel and repairs."
-          ]
-        },
         {
           "id": "prototype",
           "title": "Prototyping the macro game loop",
